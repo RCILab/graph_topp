@@ -108,19 +108,91 @@
   </section>
 
   <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body" style="text-align: center;">
-        <img src="static/images/fig_pipeline.png" alt="Proposed trajectory planning pipeline"
-             style="width: 100%; max-width: 1100px; display: block; margin: 0 auto; border-radius: 6px;">
-        <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem; font-size: 0.95rem; line-height: 1.5;">
-          <p class="section-intro" style="margin-bottom: 0; color: #4a4a4a;">
-            The framework separates geometric path selection from fixed-path time scaling (dashed line).
-            The platform evaluator <em>F<sub>plat</sub></em> instantiates stage-specific adapters
-            (Gen<sub>plat</sub>, V<sub>k</sub>, &epsilon;<sub>k</sub>, B<sub>plat</sub>)
-            without modifying either stage's shared logic, so the same TOPP-RA backend serves
-            four structurally distinct redundant manipulation platform classes.
-          </p>
-        </h2>
+    <div class="container is-max-widescreen">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-10">
+            <h2 class="title is-3">Trajectory Demonstrations</h2>
+            <p class="section-intro">
+              Accepted timed trajectories across four redundant manipulation platform classes and three scenario variants.
+            </p>
+          </div>
+        </div>
+
+        <div class="video-grid" aria-label="Trajectory demonstration videos">
+          <div class="video-grid-header video-grid-spacer"></div>
+          <div class="video-grid-header">Scenario 1</div>
+          <div class="video-grid-header">Scenario 2</div>
+          <div class="video-grid-header">Scenario 3</div>
+
+          <div class="video-row-label">SRM</div>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/single_nom.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/single_obs.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/single_ori.mp4" type="video/mp4">
+            </video>
+          </figure>
+
+          <div class="video-row-label">CDM</div>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/bi_nom.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/bi_obs.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/bi_ori.mp4" type="video/mp4">
+            </video>
+          </figure>
+
+          <div class="video-row-label">OAM</div>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/oam_nom.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/oam_obs.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/oam_ori.mp4" type="video/mp4">
+            </video>
+          </figure>
+
+          <div class="video-row-label">NMM</div>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/nmm_nom.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/nmm_obs.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="video-tile">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/nmm_ori.mp4" type="video/mp4">
+            </video>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
@@ -160,6 +232,8 @@
       </div>
 
       <div style="text-align: center; margin-bottom: 1rem;">
+        <img src="static/images/fig_pipeline.png" alt="Proposed trajectory planning pipeline"
+             style="width: 100%; max-width: 1100px; display: block; margin: 0 auto 1.5rem; border-radius: 6px;">
         <p class="fig-caption" style="font-size: 1rem; line-height: 1.6;">
           <strong>Pipeline overview.</strong>
           The two stages&mdash;geometric path selection and fixed-path time scaling&mdash;are bridged by
@@ -512,13 +586,8 @@
 
             <div class="column has-text-centered">
               <div class="person-image-container">
-                <div style="width: 100%; max-width: 180px; aspect-ratio: 3 / 4; border-radius: 12px;
-                            box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin: 0 auto;
-                            background: linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%);
-                            display: flex; align-items: center; justify-content: center;
-                            color: #ffffff; font-weight: 700; font-size: 2.2rem; letter-spacing: 0.05em;">
-                  DP
-                </div>
+                <img src="static/images/people/Daum_Park.png" alt="Daum Park"
+                     style="width: 100%; max-width: 180px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
               </div>
               <p class="is-size-5 mt-3" style="white-space: nowrap;">
                 <a href="#" class="has-text-dark" style="font-weight: 600;">Daum Park</a>
